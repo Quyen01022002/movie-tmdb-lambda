@@ -9,6 +9,7 @@ flowchart TD
         XML["XML Files"]
         TMDB["TMDB API"]
     end
+    style TMDBL fill="#f9c74f",stroke="#000"
 
     %% ========== Raw Ingest Lambdas ==========
     subgraph Ingest["⚡ Ingest Lambdas"]
@@ -80,4 +81,3 @@ flowchart TD
 
     S3 --> MediaConvert --> CDN --> Web
     S3 --> MediaConvert --> CDN --> Mobile
- style TMDBL fill=#f9c74f,stroke=#000,stroke-width=2px
