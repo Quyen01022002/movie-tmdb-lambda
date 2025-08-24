@@ -18,7 +18,7 @@ flowchart TD
     end
 
     %% clickable link tới repo
-    click TMDBL "https://github.com/your-org/movie-tmdb-lambda" "Open movie-tmdb-lambda repo"
+    click TMDBL "https://github.com/Quyen01022002/movie-tmdb-lambda" "Open movie-tmdb-lambda repo"
 
     CSV --> CSVL
     XML --> XMLL
