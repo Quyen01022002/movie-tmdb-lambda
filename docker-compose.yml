@@ -1,0 +1,11 @@
+version: "3.8"
+
+services:
+  movie-job:
+    build: .
+    container_name: movie-rmdb-lambda
+    restart: always
+    environment:
+      - KAFKA_BROKER=host.docker.internal:9092
+      - KAFKA_TOPIC=movies_raw_topic
+      - TMDB_API_KEY=6e5f6193fceee6dda046d518ac8a7698
