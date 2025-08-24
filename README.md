@@ -14,8 +14,11 @@ flowchart TD
     subgraph Ingest["⚡ Ingest Lambdas"]
         CSVL["CSV Lambda"]
         XMLL["XML Lambda"]
-        TMDBL["movie-tmdb-lambda\n(repo: movie-tmdb-lambda)"]
+        TMDBL["movie-tmdb-lambda"]
     end
+
+    %% clickable link tới repo
+    click TMDBL "https://github.com/your-org/movie-tmdb-lambda" "Open movie-tmdb-lambda repo"
 
     CSV --> CSVL
     XML --> XMLL
@@ -80,4 +83,3 @@ flowchart TD
 
     S3 --> MediaConvert --> CDN --> Web
     S3 --> MediaConvert --> CDN --> Mobile
-
