@@ -14,7 +14,7 @@ flowchart TD
     subgraph Ingest["⚡ Ingest Lambdas"]
         CSVL["CSV Lambda"]
         XMLL["XML Lambda"]
-        TMDBL["movie-tmdb-lambda"]
+        TMDBL["movie-tmdb-lambda\n(repo: movie-tmdb-lambda)"]
     end
 
     CSV --> CSVL
