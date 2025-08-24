@@ -81,5 +81,3 @@ flowchart TD
     S3 --> MediaConvert --> CDN --> Web
     S3 --> MediaConvert --> CDN --> Mobile
 
-    %% ========== Styling ==========
-    style TMDBL fill="#f9c74f",stroke="#000"
