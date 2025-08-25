@@ -12,13 +12,14 @@ flowchart TD
 
     %% ========== Raw Ingest Lambdas ==========
     subgraph Ingest["⚡ Ingest Lambdas"]
-        CSVL["CSV Lambda"]
+        CSVL["movie-csv-lambda"]
         XMLL["XML Lambda"]
         TMDBL["movie-tmdb-lambda"]
     end
 
     %% clickable link tới repo
     click TMDBL "https://github.com/Quyen01022002/movie-tmdb-lambda" "Open movie-tmdb-lambda repo"
+    click CSVL "https://github.com/Quyen01022002/movie-csv-lambda" "Open movie-csv-lambda repo"
 
     CSV --> CSVL
     XML --> XMLL
