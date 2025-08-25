@@ -4,7 +4,7 @@ require("dotenv").config();
 const languages = ["vi", "en", "ja", "zh", "fr"];
 
 /**
- * Lấy movie theo ngày và ngôn ngữ
+ * get movie by curent date
  * @param {string} date YYYY-MM-DD
  */
 async function fetchMoviesByDate(date) {
@@ -50,7 +50,6 @@ async function fetchMoviesByDate(date) {
     }
   }
 
-  console.log(`Tổng cộng ${allMovies.length} movies có bản dịch.`);
   return allMovies;
 }
 
