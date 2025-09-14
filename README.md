@@ -26,7 +26,7 @@ flowchart TD
     TMDB --> TMDBL
 
     %% ========== Raw Topic ==========
-    CSVL --> RawTopic["movies_raw_topic"]
+    CSVL --> RawTopic["KAFKA TOPIC\nmovies_raw_topic"]
     XMLL --> RawTopic
     TMDBL --> RawTopic
 
